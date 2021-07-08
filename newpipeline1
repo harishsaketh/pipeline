@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo '1. Hello World'
+                echo "Version: $hari"
+                
+                
+            }
+        }
+        stage('Prepare build..') {
+            steps {
+                echo '2. Prepare build'
+                echo "Version: $hari"
+                
+            }
+        }
+        stage('Testing..') {
+            steps {
+                echo '3. Testing the build..'
+                echo "Version: $hari"
+                
+            }
+        }
+        stage('Deploy..') {
+            steps {
+                echo '4. Deployment in progress..'
+                echo "Version: $hari"
+                
+           
+            }
+        }
+        
+    }
+}
